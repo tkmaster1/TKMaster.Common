@@ -1,0 +1,57 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.13.35828.75
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TKMaster.Common.Util", "src\TKMaster.Common.Util\TKMaster.Common.Util.csproj", "{3F02E737-8B15-4C8B-867B-3CB20ACCD4C1}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "0 - Utilities", "0 - Utilities", "{02EA681E-C7D8-13C7-8484-4AC65E1B71E8}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "3 - Logger", "3 - Logger", "{4E748180-D648-4B5D-9005-CA5B499D3FA7}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TKMaster.Common.Logger", "src\TKMaster.Common.Logger\TKMaster.Common.Logger.csproj", "{07FE5876-F356-F568-6FCA-5F167B9BA468}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "2 - Domain", "2 - Domain", "{C9080E58-A9D2-48C1-A4AE-1DCCAE25ABCC}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TKMaster.Common.Domain", "src\TKMaster.Common.Domain\TKMaster.Common.Domain.csproj", "{787BE03B-2D5A-438B-8464-2EAE5439D09C}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "1 - Application", "1 - Application", "{48CE0257-6546-4A38-BA35-1E0D25D6829F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TKMaster.Common.Application", "src\TKMaster.Common.Application\TKMaster.Common.Application.csproj", "{CFA10C99-17D9-41F2-AAF9-252C9068A44D}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{3F02E737-8B15-4C8B-867B-3CB20ACCD4C1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3F02E737-8B15-4C8B-867B-3CB20ACCD4C1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3F02E737-8B15-4C8B-867B-3CB20ACCD4C1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3F02E737-8B15-4C8B-867B-3CB20ACCD4C1}.Release|Any CPU.Build.0 = Release|Any CPU
+		{07FE5876-F356-F568-6FCA-5F167B9BA468}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{07FE5876-F356-F568-6FCA-5F167B9BA468}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{07FE5876-F356-F568-6FCA-5F167B9BA468}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{07FE5876-F356-F568-6FCA-5F167B9BA468}.Release|Any CPU.Build.0 = Release|Any CPU
+		{787BE03B-2D5A-438B-8464-2EAE5439D09C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{787BE03B-2D5A-438B-8464-2EAE5439D09C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{787BE03B-2D5A-438B-8464-2EAE5439D09C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{787BE03B-2D5A-438B-8464-2EAE5439D09C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{CFA10C99-17D9-41F2-AAF9-252C9068A44D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CFA10C99-17D9-41F2-AAF9-252C9068A44D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CFA10C99-17D9-41F2-AAF9-252C9068A44D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CFA10C99-17D9-41F2-AAF9-252C9068A44D}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{3F02E737-8B15-4C8B-867B-3CB20ACCD4C1} = {02EA681E-C7D8-13C7-8484-4AC65E1B71E8}
+		{07FE5876-F356-F568-6FCA-5F167B9BA468} = {4E748180-D648-4B5D-9005-CA5B499D3FA7}
+		{787BE03B-2D5A-438B-8464-2EAE5439D09C} = {C9080E58-A9D2-48C1-A4AE-1DCCAE25ABCC}
+		{CFA10C99-17D9-41F2-AAF9-252C9068A44D} = {48CE0257-6546-4A38-BA35-1E0D25D6829F}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {220A8042-3D45-4436-9791-809D1C462CBF}
+	EndGlobalSection
+EndGlobal

@@ -1,0 +1,53 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net9.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+
+    <!-- Geração do pacote -->
+    <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
+    <IncludeBuildOutput>true</IncludeBuildOutput>
+
+    <!-- Metadata do NuGet -->
+    <PackageId>TKMaster.Common.Toolkit</PackageId>
+    <Title>TKMaster.Common</Title>
+    <Version>1.0.13</Version>
+    <Authors>TKMaster Consultoria</Authors>
+    <Company>TKMaster Consultoria</Company>
+    <Owners>TKMaster</Owners>
+    <Description>
+      TKMaster.Common é uma biblioteca reutilizável para projetos em C#.
+      Ela contém componentes comuns e utilitários que podem ser facilmente integrados em qualquer aplicação.
+      A biblioteca oferece funcionalidades como filtros dinâmicos, ordenação sobre consultas IQueryable, métodos de extensão úteis, sistema de logger customizado, repositório genérico com suporte a DbContext dinâmico e suporte à globalização.
+    </Description>
+    <ReleaseNotes>
+      Versão 1.0.13
+
+      - Inclusão de RepositoryBase genérico com TEntity e TContext.
+      - Interface IRepositoryBase atualizada.
+      - Suporte a DbContext opcional de identidade.
+      - Manutenção das funcionalidades de filtros dinâmicos e ordenação.
+    </ReleaseNotes>
+    <PackageTags>common;toolkit;domain;util;logger;filters;dynamic-query;repository;tkmaster</PackageTags>
+    <PackageLicenseFile>LICENSE.txt</PackageLicenseFile>
+    <PackageReadmeFile>README.md</PackageReadmeFile>
+    <Copyright>Copyright © 2025</Copyright>
+    <Language>pt-BR</Language>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Include="..\..\README.md" Pack="true" PackagePath="\" />
+  </ItemGroup>
+
+   <!--Pós-build: copiar DLLs dos outros projetos para o output--> 
+  <Target Name="CopyProjectDlls" AfterTargets="Build">
+    <ItemGroup>
+      <!--<LibsToInclude Include="..\TKMaster.Common.Application\bin\$(Configuration)\$(TargetFramework)\TKMaster.Common.Application.dll" />
+      <LibsToInclude Include="..\TKMaster.Common.Domain\bin\$(Configuration)\$(TargetFramework)\TKMaster.Common.Domain.dll" />
+      <LibsToInclude Include="..\TKMaster.Common.Logger\bin\$(Configuration)\$(TargetFramework)\TKMaster.Common.Logger.dll" />
+      <LibsToInclude Include="..\TKMaster.Common.Util\bin\$(Configuration)\$(TargetFramework)\TKMaster.Common.Util.dll" />-->
+    </ItemGroup>
+    <Copy SourceFiles="@(LibsToInclude)" DestinationFolder="$(OutputPath)" SkipUnchangedFiles="true" />
+  </Target>
+
+</Project>
