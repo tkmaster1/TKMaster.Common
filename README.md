@@ -117,4 +117,4 @@ using TKMaster.Common.Util.Helpers;
 
 ## 📄 Licença
 
-Este projeto é licenciado sob os termos da licença MIT. Consulte o arquivo [LICENSE.txt](./LICENSE.txt) para mais informações.
+Este projeto é licenciado sob os termos da licença MIT. Consulte o arquivo [LICENSE](./LICENSE) para mais informações.
